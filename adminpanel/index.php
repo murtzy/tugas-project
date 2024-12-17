@@ -10,6 +10,7 @@
   <title>Document</title>
 </head>
 <body>
-  <h2>Halo admin</h2>
+  <h2>Halo <?= $_SESSION['username'] ?></h2>
+  <button><a href="logout.php">Logout</a></button>
 </body>
 </html>
