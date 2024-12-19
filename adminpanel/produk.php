@@ -1,4 +1,4 @@
-<?php
+<?php 
 require 'session.php';
 require '../koneksi.php';
 
@@ -70,17 +70,17 @@ $jumlahProduk = mysqli_num_rows($query);
         $image_size = $_FILES["foto"]["size"];
         $max_size = 10000000; // 10MB
 
-        // if ($nama_file) {
-        //   if ($image_size > $max_size) {
-        //     echo "<div class='alert alert-warning mt-3' role='alert'>File tidak boleh lebih dari 10Mb</div>";
-        //   } else {
-        //     if($imageFileType!= "jpg" && $imageFileType!= "png" && $imageFileType!= "jpeg") {
-        //       echo "<div class='alert alert-warning mt-3' role='alert'>File harus bertipe jpg, png, jpeg</div>";
-        //     } else {
-        //       move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)
-        //     }
-        //   }
-        // }
+        if ($nama_file) {
+          if ($image_size > $max_size) {
+            echo "<div class='alert alert-warning mt-3' role='alert'>File tidak boleh lebih dari 10Mb</div>";
+          } else {
+            if($imageFileType!= "jpg" && $imageFileType!= "png" && $imageFileType!= "jpeg") {
+              echo "<div class='alert alert-warning mt-3' role='alert'>File harus bertipe jpg, png, jpeg</div>";
+            } else {
+              move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+            }
+          }
+        }
       }
       ?>
     </div>
