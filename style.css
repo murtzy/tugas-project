@@ -1,0 +1,81 @@
+.warna1 {
+  background-color: #876445;
+}
+
+.warna2 {
+  background-color: #ca965c;
+}
+
+.warna3 {
+  background-color: #eec373;
+}
+
+.warna4 {
+  background-color: #f4dfba;
+}
+
+.warna-beli {
+  background: salmon;
+}
+
+.banner {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('image/banner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+/* .highlighted-kategori {
+  height: 250px;
+}
+
+.kategori-baju-pria {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) url('#');
+  background-size: cover;
+  background-position: center;
+}
+
+.kategori-baju-wanita {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) url('#');
+  background-size: cover;
+  background-position: center;
+}
+
+.kategori-sepatu {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) url('#');
+  background-size: cover;
+  background-position: center;
+} */
+
+.no-decoration {
+  text-decoration: none;
+  color: white;
+}
+
+.no-decoration:hover {
+  color: #eec373;
+}
+
+.text-harga {
+  font-size: 22px;
+  color: #ca965c;
+}
+
+.image-box {
+  height: 250px;
+}
+
+.image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-subscribe {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.content-subscribe a {
+  color: #fff;
+}
